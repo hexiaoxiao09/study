@@ -11,3 +11,5 @@
       -- main.dart  ---  flutter 的入口文件
     test            ---  放测试文件的
     pubspec.yaml    ---  项目的配置文件(在dependencise配置第三方库)
+## 3、快捷键
+    1、fim + tab => import 'package:flutter/material.dart';
