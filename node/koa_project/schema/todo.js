@@ -15,13 +15,19 @@ module.exports = function (sequelize, DataTypes) {
         allowNull: false,
         field: 'title',
       },
+      // 状态
+      status: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        field: 'status',
+      },
       //作者
       author: {
         type: DataTypes.STRING,
         allowNull: false,
         field: 'author',
       },
-      //内容
+      // 内容
       content: {
         type: DataTypes.STRING,
         allowNull: false,

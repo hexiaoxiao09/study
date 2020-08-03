@@ -4,6 +4,8 @@
 const http = require('http');
 // 引入url模块
 const url = require('url')
+// 引入fs模块
+const fs = require('fs')
 
 /* 
  * 创建服务
@@ -29,4 +31,10 @@ http.createServer((request, respose) => {
 }).listen(8010);    // 监听端口
 
 console.log('Server running at http://localhost:8010/');
+
+
+
+
+
+
 

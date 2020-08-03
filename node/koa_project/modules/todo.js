@@ -19,7 +19,25 @@ class TodoModel {
       title: data.title, //标题
       author: data.author, //作者
       content: data.content, //文章内容
+      status: data.status, // 状态
     })
+  }
+
+  /**
+   * 查询所有数据
+   * @param data
+   * @returns {Promise<Model>}
+   */
+  static async getAllToDoDetail(data) {
+    if (data) {
+      return await todo.findAll({
+        where: {
+          status: Number(data),
+        },
+      })
+    } else {
+      return await todo.findAll()
+    }
   }
 
   /**
@@ -30,7 +48,7 @@ class TodoModel {
   static async getToDoDetail(id) {
     return await todo.findOne({
       where: {
-        id,
+        status: Number(id),
       },
     })
   }

@@ -12,8 +12,9 @@ const router = new Router({
 router.post('/todolist/create', TodoController.create)
 
 //获取文章详情
-router.get('/todolist/detail', function (ctx, next) {
-  ctx.body = 'this is a /todolist/detail response'
-})
+router.get('/todolist/detail/:id', TodoController.detail)
+
+//查询所有数据
+router.post('/todolist/getAll', TodoController.getAll)
 
 module.exports = router
