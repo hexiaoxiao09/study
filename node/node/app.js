@@ -4,6 +4,7 @@ const path = require('path');     // 引入path模块
 const url = require('url');     // 引入url模块
 const getMime = require('./moudle/common'); // 获取后缀名的自定义函数
 
+console.log(getMime('html'))
 // 创建服务
 http.createServer(async (req, res) => {
   let pathname = url.parse(req.url).pathname; // 格式化获取的地址，去掉get传值
@@ -24,4 +25,5 @@ http.createServer(async (req, res) => {
   }
 }).listen(3001)
 // console.log(getMime('html'))
-console.log(`http://localhost:3001`)
+console.log(`http://localhost:3001`) 
+

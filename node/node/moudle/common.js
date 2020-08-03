@@ -29,5 +29,6 @@ function getMime(extname) {
   //   })
   // })
 }
+getMime('html')
 
 module.exports = getMime
