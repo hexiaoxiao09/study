@@ -1,0 +1,11 @@
+{
+  "name": "myself_express",
+  "version": "1.0.0",
+  "description": "自己封装的类似express的简单框架",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

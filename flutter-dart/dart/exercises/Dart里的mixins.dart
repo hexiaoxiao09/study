@@ -74,5 +74,5 @@ main() {
   print(d is A);
   print(d is B);
   print(d is C);
-  print(d is A,B);
+  // print(d is A,B);
 }
