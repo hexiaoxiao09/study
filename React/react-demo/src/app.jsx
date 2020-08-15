@@ -1,10 +1,11 @@
 import React from 'react'
-import Home from './Home'
-import Nav from './MyNav'
-import State from './StateComponent'
-import ComponentLife from './ComponentLife'
-import SetStateDemo from './SetStateDemo'
-import FormDemo from './FormDemo'
+// import Home from './Home'
+// import Nav from './MyNav'
+// import State from './StateComponent'
+// import ComponentLife from './ComponentLife'
+// import SetStateDemo from './SetStateDemo'
+// import FormDemo from './FormDemo'
+import Parent from './components/parent'
 
 class App extends React.Component {
   constructor() {
@@ -29,13 +30,14 @@ class App extends React.Component {
     return (
       <div>
         <h1>Hello React Component</h1>
-        <Home />
-        <Nav nav={nav1} />
-        <Nav nav={nav2} />
-        <State />
-        <ComponentLife title={title} changeTitleHandler={this.changeTitle} />
-        <SetStateDemo />
-        <FormDemo />
+        {/* <Home /> */}
+        {/* <Nav nav={nav1} /> */}
+        {/* <Nav nav={nav2} /> */}
+        {/* <State /> */}
+        {/* <ComponentLife title={title} changeTitleHandler={this.changeTitle} /> */}
+        {/* <SetStateDemo /> */}
+        {/* <FormDemo /> */}
+        <Parent />
       </div>
     )
   }

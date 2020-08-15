@@ -10,15 +10,26 @@ export default class SetStateDemo extends React.Component{
   }
 
 
-  add = () => {
+  add = async () => {
     /* 
      * this.setState(object, callback)
     */
-    this.setState({
+    // this.setState({
+    //   count: this.state.count += 1
+    // },() => {
+    //   console.log(this.state.count)
+    // })
+
+    await this.setStateAsync({
       count: this.state.count += 1
-    },() => {
-      console.log(this.state.count)
     })
+    console.log(this.state.count)
+  }
+
+  setStateAsync = (state) => {
+    return new Promise(resolve => {
+      this.setState(state, resolve)
+    }) 
   }
 
   render() {
