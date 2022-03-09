@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from 'antd'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default class Mine extends React.Component{
 
@@ -16,10 +16,10 @@ export default class Mine extends React.Component{
       <div>
         <h1>Mine</h1>
         <Button type="primary">
-          <Link to="/about">前往About</Link>
+          <NavLink to="/about">前往About</NavLink>
         </Button>
         <Button>
-          <Link to="/home">前往Home</Link>
+          <NavLink to="/home">前往Home</NavLink>
         </Button>
       </div>
     )

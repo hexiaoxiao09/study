@@ -20,7 +20,6 @@ export default class Child2 extends React.Component{
     return(
       <div>
         2号子组件的输入框  
-        <input type="text" value={this.porps.after_num}/>
       </div>
       
     )
