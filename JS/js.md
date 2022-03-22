@@ -4,4 +4,8 @@
     typeof(null) ==> Object
     typeof(undefined) ==> undefined
 
-#### 2.
+#### 2.new
+    1.先创建一个空对象
+    2.将它赋值给this
+    3.通过this将方法和属性添加至该对象
+    4.返回this指向的新对象
