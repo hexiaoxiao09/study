@@ -4,4 +4,4 @@
     typeof(null) ==> Object
     typeof(undefined) ==> undefined
 
-#### 2.
+#### 2.跨域问题
