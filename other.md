@@ -33,12 +33,12 @@
   12. git branch 创建分支
 
   13. git checkout 切换分支
+
+  14. get reset --hard 重置
 ```
 
+### yarn 和 npm pnpm(performant npm) 的区别
 
-
-### yarn 和 npm 的区别
-
-
+    1. yarn 有一个lock file文件锁定使用的模块版本， npm的package.json的模块版本号有可能是个版本范围(yarn的锁定版本文件默认生成，npm的需要执行 npm shrinkwrap 命令)
 
 ### 跨域问题
